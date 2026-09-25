@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi — FrostHoot Studio</title>
+  <meta name="description" content="Kebijakan Privasi aplikasi dan layanan digital yang dikembangkan oleh FrostHoot Studio.">
+  <meta name="theme-color" content="#060911">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .policy-content {
+      max-width: 840px;
+      margin: 3rem auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2.5rem;
+      backdrop-filter: blur(12px);
+    }
+    .policy-content h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .policy-meta {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--accent-cyan);
+      margin-bottom: 2rem;
+      display: block;
+      border-bottom: 1px solid var(--border-subtle);
+      padding-bottom: 1rem;
+    }
+    .policy-content h2 {
+      font-size: 1.35rem;
+      margin: 2rem 0 0.8rem;
+      color: #FFFFFF;
+    }
+    .policy-content h3 {
+      font-size: 1.1rem;
+      margin: 1.4rem 0 0.6rem;
+      color: var(--text-main);
+    }
+    .policy-content p, .policy-content li {
+      font-size: 0.95rem;
+      color: var(--text-body);
+      line-height: 1.75;
+      margin-bottom: 0.8rem;
+    }
+    .policy-content ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .back-nav {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      transition: color var(--transition-fast);
+    }
+    .back-nav:hover {
+      color: var(--accent-cyan);
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-glow-orb bg-glow-1"></div>
+  <div class="bg-grid-overlay"></div>
+
+  <main class="container">
+    <div class="policy-content">
+      <a href="index.html" class="back-nav">
+        &larr; Kembali ke Beranda FrostHoot Studio
+      </a>
+
+      <h1>Kebijakan Privasi</h1>
+      <span class="policy-meta">Berlaku sejak: 2026 // Pengembang: FrostHoot Studio</span>
+
+      <p>
+        <strong>FrostHoot Studio</strong> (&ldquo;kami&rdquo;) menghormati privasi Anda. Dokumen ini menjelaskan bagaimana data Anda diperlakukan saat menggunakan aplikasi dan layanan digital yang kami kembangkan, termasuk aplikasi konsumen <strong>Waktu Shalat</strong> maupun sistem utilitas kerja.
+      </p>
+
+      <h2>1. Prinsip Utama: Privasi dan Offline-First</h2>
+      <p>
+        Sebagian besar aplikasi kami dirancang dengan pendekatan <strong>Offline-First</strong>. Ini berarti data pengguna diproses secara lokal pada perangkat Anda:
+      </p>
+      <ul>
+        <li><strong>Data Lokasi (GPS):</strong> Digunakan semata-mata pada perangkat untuk menghitung waktu ibadah atau koordinat lokal dan <strong>tidak pernah dikirimkan atau disimpan di server eksternal kami</strong>.</li>
+        <li><strong>Data Preferensi &amp; Rekam Jejak:</strong> Bookmark, catatan harian, dan checklist ibadah disimpan di memori lokal ponsel Anda (menggunakan SQLite / Hive Box terenkripsi lokal).</li>
+      </ul>
+
+      <h2>2. Pengumpulan Data Anonim &amp; Analitik</h2>
+      <p>
+        Untuk memastikan kestabilan aplikasi, kami dapat mengumpulkan data crash dan telemetri teknis yang sepenuhnya anonim (tanpa identitas pribadi) seperti tipe perangkat, versi sistem operasi, dan log galat (stack trace) guna memperbaiki bug.
+      </p>
+
+      <h2>3. Iklan &amp; Layanan Pihak Ketiga</h2>
+      <p>
+        Aplikasi unggulan kami (seperti Waktu Shalat) berprinsip <strong>100% Bebas Iklan</strong> untuk kenyamanan pengguna. Jika terdapat aplikasi lain yang menggunakan integrasi pihak ketiga (misalnya Google Calendar API untuk sinkronisasi hari libur), data hanya digunakan sesuai izin spesifik yang diberikan oleh pengguna.
+      </p>
+
+      <h2>4. Hak dan Kontrol Pengguna</h2>
+      <p>
+        Anda memiliki kendali penuh atas data Anda. Pada aplikasi kami yang menyediakan fitur <em>Backup &amp; Restore</em>, Anda dapat mengekspor seluruh data pribadi Anda ke format file mandiri (JSON) atau menghapusnya kapan saja dengan menghapus instalasi aplikasi.
+      </p>
+
+      <h2>5. Kontak Kami</h2>
+      <p>
+        Jika Anda memiliki pertanyaan seputar kebijakan privasi ini atau ingin mengajukan masukan terkait keamanan data, silakan hubungi kami melalui email:
+      </p>
+      <p>
+        <a href="mailto:frosthoot.studio@gmail.com" style="color: var(--accent-cyan); font-weight: 600;">frosthoot.studio@gmail.com</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>&copy; 2026 FrostHoot Studio. All rights reserved.</p>
+      <a href="index.html" class="footer-link">Beranda</a>
+    </div>
+  </footer>
+</body>
+</html>

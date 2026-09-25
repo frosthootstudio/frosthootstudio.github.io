@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" fill="none">
+  <defs>
+    <linearGradient id="frostGrad" x1="10" y1="10" x2="110" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+    <linearGradient id="eyeGrad" x1="0" y1="0" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+    <filter id="frostGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Shield / Hexagonal Aura -->
+  <polygon points="60,10 102,32 102,88 60,110 18,88 18,32" stroke="url(#frostGrad)" stroke-width="2.5" fill="#0D1526" fill-opacity="0.85" />
+  
+  <!-- Owl Ears & Brow -->
+  <path d="M 28 36 L 42 22 L 56 38 L 64 38 L 78 22 L 92 36" stroke="url(#frostGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Owl Face Contour -->
+  <path d="M 32 42 Q 60 52 88 42 L 80 84 L 60 98 L 40 84 Z" fill="#131E35" stroke="url(#frostGrad)" stroke-width="2" />
+  
+  <!-- Left Eye Outer & Pupil -->
+  <circle cx="45" cy="56" r="10" stroke="#38BDF8" stroke-width="2" fill="#090E1A" />
+  <circle cx="45" cy="56" r="4.5" fill="url(#eyeGrad)" filter="url(#frostGlow)" />
+  <circle cx="43.5" cy="54" r="1.5" fill="#FFFFFF" />
+
+  <!-- Right Eye Outer & Pupil -->
+  <circle cx="75" cy="56" r="10" stroke="#38BDF8" stroke-width="2" fill="#090E1A" />
+  <circle cx="75" cy="56" r="4.5" fill="url(#eyeGrad)" filter="url(#frostGlow)" />
+  <circle cx="73.5" cy="54" r="1.5" fill="#FFFFFF" />
+
+  <!-- Beak -->
+  <polygon points="60,62 66,74 54,74" fill="#38BDF8" />
+  
+  <!-- Tech Circuit Node Accent -->
+  <circle cx="60" cy="88" r="2.5" fill="#38BDF8" />
+  <line x1="60" y1="74" x2="60" y2="85" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="2 2" />
+</svg>
