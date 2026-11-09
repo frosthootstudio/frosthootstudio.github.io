@@ -13,7 +13,7 @@ const STUDIO_CONFIG = {
   links: {
     github: "https://github.com/frosthootstudio",
     prayerAppGithub: "https://github.com/frosthootstudio/prayer_app",
-    playStore: "https://github.com/frosthootstudio/prayer_app", // Ganti dengan URL Google Play Console jika sudah ada
+    playStore: "https://play.google.com/store/apps/details?id=studio.frosthoot.prayer_app",
     linkedin: "https://linkedin.com/in/", // Paste profile LinkedIn di sini
     instagram: "https://instagram.com/",
     tiktok: "https://tiktok.com/@"
@@ -39,8 +39,8 @@ const CASE_STUDIES = {
       "Tasbih digital terintegrasi haptic feedback halus dan pengingat puasa sunnah dinamis."
     ],
     techStack: ["Flutter", "Dart", "Hive NoSQL", "adhan", "just_audio", "Android Native"],
-    actionUrl: STUDIO_CONFIG.links.prayerAppGithub,
-    actionLabel: "Buka GitHub Repository"
+    actionUrl: STUDIO_CONFIG.links.playStore,
+    actionLabel: "Buka di Google Play"
   },
   sijaga: {
     badge: "Enterprise Internal • Plant Maintenance",
